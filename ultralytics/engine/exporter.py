@@ -77,7 +77,12 @@ from ultralytics.data.dataset import YOLODataset
 from ultralytics.data.utils import check_cls_dataset, check_det_dataset
 from ultralytics.nn.autobackend import check_class_names, default_class_names
 from ultralytics.nn.modules import C2f, Classify, Detect, RTDETRDecoder
-from ultralytics.nn.tasks import ClassificationModel, DetectionModel, SegmentationModel, WorldModel
+from ultralytics.nn.tasks import (
+    ClassificationModel,
+    DetectionModel,
+    SegmentationModel,
+    WorldModel,
+)
 from ultralytics.utils import (
     ARM64,
     DEFAULT_CFG,
@@ -105,14 +110,24 @@ from ultralytics.utils.checks import (
     is_intel,
     is_sudo_available,
 )
-from ultralytics.utils.downloads import attempt_download_asset, get_github_assets, safe_download
+from ultralytics.utils.downloads import (
+    attempt_download_asset,
+    get_github_assets,
+    safe_download,
+)
 from ultralytics.utils.export import onnx2engine, torch2imx, torch2onnx
 from ultralytics.utils.files import file_size, spaces_in_path
 from ultralytics.utils.metrics import batch_probiou
 from ultralytics.utils.nms import TorchNMS
 from ultralytics.utils.ops import Profile
 from ultralytics.utils.patches import arange_patch
-from ultralytics.utils.torch_utils import TORCH_1_11, TORCH_1_13, TORCH_2_1, TORCH_2_4, select_device
+from ultralytics.utils.torch_utils import (
+    TORCH_1_11,
+    TORCH_1_13,
+    TORCH_2_1,
+    TORCH_2_4,
+    select_device,
+)
 
 
 def export_formats():

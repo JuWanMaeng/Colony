@@ -3,7 +3,6 @@
 # scale 0.5 -> 1.0
 # hsv들 0.n -> 0
 
-
 # Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 # Global configuration YAML with settings and hyperparameters for YOLO training, validation, prediction and export
