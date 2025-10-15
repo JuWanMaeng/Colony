@@ -104,10 +104,10 @@ def run_inference_and_log(best_model_path, test_images):
 # 4) Main training function
 # -------------------------------
 def main():
-    exp_name = 'yolov8'
+    exp_name = 'colony_ver2_67'
     wandb.init(project="colony", entity="aodwndhks", name=f"{exp_name}")
     
-    model = YOLO("yolov8n.pt")
+    model = YOLO("yolo12n.pt")
 
     # 콜백 연결
     model.add_callback("on_train_epoch_end", log_train_metrics)
@@ -117,7 +117,7 @@ def main():
         data="colony.yaml",
         epochs=500,
         imgsz=640,
-        cfg=f"cfgs/default.yaml",
+        cfg=f"cfgs/test6.yaml",
         project="experiments",
         name=f"{exp_name}",
         plots=True
